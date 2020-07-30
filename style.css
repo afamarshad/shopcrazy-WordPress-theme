@@ -1,0 +1,415 @@
+/*
+Theme Name: Shop Crazy
+Author: Nida Zahid, Afsah Arshad, Rehab Muhammad Hassan
+Description: Shopping Theme
+Version: 0.0.1
+Tags: shop
+*/
+
+
+/*
+ * Globals
+ */
+ @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ title{
+    color: blue;
+    }
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: #555;
+      
+    }
+    
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6 {
+      margin-top: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      color: #333;
+    }
+    
+    
+    /*
+     * Override Bootstrap's default container.
+     */
+     .container{
+     margin-top: 0px;
+     }
+    
+    @media (min-width: 1200px) {
+      .container {
+        width: 970px;
+      }
+    }
+    
+    
+    /*
+     * Masthead for nav
+     */
+    
+    .blog-masthead {
+      background-color: #428bca;
+      -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+              box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+    }
+    
+    /* Nav links */
+    .blog-nav-item {
+      position: relative;
+      display: inline-block;
+      padding: 10px;
+      font-weight: 500;
+      color: #cdddeb;
+    }
+    .blog-nav-item:hover,
+    .blog-nav-item:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    /* Active state gets a caret at the bottom */
+    .blog-nav .active {
+      color: #fff;
+    }
+    .blog-nav .active:after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 0;
+      margin-left: -5px;
+      vertical-align: middle;
+      content: " ";
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid;
+      border-left: 5px solid transparent;
+    }
+    
+    /* .parallax { */
+      /* The image used */
+      /* background-image: url("images/restaurant.jpg"); */
+    
+      /* Set a specific height */
+      /* min-height: 500px;  */
+    
+      /* Create the parallax scrolling effect */
+      /* background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } */
+     
+    /*
+     * Blog name and description
+     */
+    
+    .blog-header {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .blog-title {
+      margin-top: 30px;
+      margin-bottom: 0;
+      font-size: 60px;
+      font-weight: normal;
+    }
+    .blog-description {
+      font-size: 20px;
+      color: #999;
+    }
+    .blog-nav li {
+      position: relative;
+      display: inline-block;
+      padding: 10px;
+      font-weight: 500;
+    }
+    
+    /*
+     * Main column and sidebar layout
+     */
+    
+    .blog-main {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    /* Sidebar modules for boxing content */
+    .sidebar-module {
+      padding: 15px;
+      margin: 0 -15px 15px;
+    }
+    .sidebar-module-inset {
+      padding: 15px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
+    .sidebar-module-inset p:last-child,
+    .sidebar-module-inset ul:last-child,
+    .sidebar-module-inset ol:last-child {
+      margin-bottom: 0;
+    }
+    
+    
+    /* Pagination */
+    .pager {
+      margin-bottom: 60px;
+      text-align: left;
+    }
+    .pager > li > a {
+      width: 140px;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 30px;
+    }
+    
+    
+    /*
+     * Blog posts
+     */
+    
+    .blog-post {
+      margin-bottom: 60px;
+    }
+    .blog-post-title {
+      margin-bottom: 5px;
+      font-size: 40px;
+    }
+    .blog-post-meta {
+      margin-bottom: 20px;
+      color: #999;
+    }
+    nav{
+        font-size: 20px;
+    }
+    
+    header h1{
+        margin-top:10px;
+        font-family: "Times New Roman";
+        margin-left:20px;
+        margin-bottom:10px;
+    }
+
+    #account{
+        margin-left:500px;
+         margin-right:10px; 
+    }
+    /*
+     * Footer
+     */
+    
+    .blog-footer {
+      padding: 40px 0;
+      color: #999;
+      text-align: center;
+      background-color: black;
+      border-top: 1px solid #e5e5e5;
+    }
+    .blog-footer p:last-child {
+      margin-bottom: 0;
+    }
+
+
+    /* Footer */
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #066cf1;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #0f026e !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}}
+
+.jumbotron{
+  background: url('images/slider\ images/abc.jpg') no-repeat;
+  height: 600px;
+}
+
+.wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.box {
+	margin: 10px;
+	width: 300px;
+	height: 490px;
+	text-align: center;
+	border-radius: 3px;
+	-webkit-transition: 200ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.box:hover {
+	margin-bottom: -10px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+.box h1 {
+	color: #fff;
+	padding: 30px;
+	margin-top: 100px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 25px;
+	background: rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+.one {
+	background: url('images/poncho.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-right: 70px;
+}
+
+.two {
+	background: url('images/ready to wear/Nishat-Linen-Stitched-Digital-Printed-Ready-to-Wear-Pakistani-Dress-Winter-Colle.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-right: 70px;
+}
+.three {
+	background: url('images/casual/50A2770A.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.four {
+	background: url('images/abayas/Client-25-03-20190693-300x486.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-right: 70px;
+}
+
+.five {
+	background: url('images/unstiched/3.PNG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-right: 70px;
+}
+.six {
+	background: url('images/formal/FHRT555469192-610x1050.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.brandname{
+  font-size:500px;
+}
+
+.badge {
+  margin-top:5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
+
+.navbar-collapse .collapse .footer-menu-class{
+  color:white;
+}
